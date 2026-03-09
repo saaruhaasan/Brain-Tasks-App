@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo Updating kubeconfig...
+      - aws eks --region us-east-1 update-kubeconfig --name brain-tasks-cluster
+      - echo Deploying to EKS...
+      - kubectl apply -f deployment.yaml
+      - kubectl apply -f service.yaml
+
