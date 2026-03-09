@@ -84,7 +84,7 @@ This repository represents step 4 only.
 
 Since this is already the compiled output:
 
-No dependencies are required
+No dependencies are required for this project
 
 No build process is required
 
